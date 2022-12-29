@@ -1,9 +1,13 @@
   <div class="card-header">
      <h1 class = 'text-center'>Find Your Lost Pet</h1>
   </div>
-      <h5 class="card-title text-center">"Where, Oh Where, Has My Little Dog Gone? Refresh Your Feeds"</h5>
 <div class="container my-auto mt-5">
+      <h5 class="card-title text-center">"Where, Oh Where, Has My Little Dog Gone? Refresh Your Feeds"</h5>
+
   <div class="card-body">
+    <div class="btn btn-primary">
+    <%= link_to 'Declare a found pet', new_pet_path, class: "link_to" %>
+    </div>
     <div class="card-1">
       <div class="row">
         <div class="col-4"><%= image_tag "bernese.jpg"%></div>
@@ -13,7 +17,7 @@
       </div>
     </div>
 
-   <div class="container-fluid my-auto mt-5">
+   <div class="container">
      <ul class="list-group list-group-flush">
        <% @pets.each do |pet| %>
          <li class="list-group-item" >
@@ -24,7 +28,3 @@
    </div>
   </div>
 </div>
-      <div class="btn btn-primary">
-        <%= link_to 'Declare a found pet', new_pet_path, class: "link_to" %>
-      </div>
-    </div>

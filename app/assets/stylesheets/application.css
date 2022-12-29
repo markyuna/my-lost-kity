@@ -13,3 +13,95 @@
  *= require_tree .
  *= require_self
  */
+
+ .navbar {
+  flex-direction: row;
+  background-color: #8dc63f;
+}
+
+.btn-outline-warning {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: right;
+}
+
+h1 {
+  font-family: dosis,Helvetica,arial,sans-serif;
+  letter-spacing: 1px;
+  background-color: #e4eaee;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: var(--bs-card-bg);
+  background-clip: border-box;
+  border-radius: var(--bs-card-border-radius);
+}
+
+.card-1 {
+  display: grid;
+  justify-items: baseline;
+  position: absolute;
+  height: auto;
+  opacity: 50%;
+}
+
+.container {
+  display: grid;
+
+  grid-gap: 4px;
+  padding: 2px;
+
+}
+.col-1 {
+  display: grid;
+  height: 250px;
+  justify-items: center;
+  opacity: 80%;
+}
+
+.col-2 {
+  display: grid;
+  height: 350px;
+  justify-items: stretch;
+
+}
+
+.col-3 {
+  display: grid;
+  height: 350px;
+  justify-items: stretch;
+  opacity: 80%;
+}
+
+.col-4 {
+  display: grid;
+  height: 350px;
+  justify-items: stretch;
+
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+}
+
+.link_to {
+  color: white;
+  font-size: larger;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  transition: 2s;
+  justify-content: center;
+  }
+
+.list-group-item {
+  scroll-padding-bottom: 10px;
+  opacity: 80%;
+}
