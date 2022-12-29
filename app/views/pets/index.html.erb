@@ -1,0 +1,30 @@
+  <div class="card-header">
+     <h1 class = 'text-center'>Find Your Lost Pet</h1>
+  </div>
+      <h5 class="card-title text-center">"Where, Oh Where, Has My Little Dog Gone? Refresh Your Feeds"</h5>
+<div class="container my-auto mt-5">
+  <div class="card-body">
+    <div class="card-1">
+      <div class="row">
+        <div class="col-4"><%= image_tag "bernese.jpg"%></div>
+        <div class="col-1"><%= image_tag "german.jpg" %></div>
+        <div class="col-3"><%= image_tag "luna.jpg"%></div>
+        <div class="col-2"><%= image_tag "nolito.jpg"%></div>
+      </div>
+    </div>
+
+   <div class="container-fluid my-auto mt-5">
+     <ul class="list-group list-group-flush">
+       <% @pets.each do |pet| %>
+         <li class="list-group-item" >
+           <%= link_to pet.name, pet_path(pet) %> | found <%= time_ago_in_words(pet.found_on) %> ago
+         </li>
+       <% end %>
+     </ul>
+   </div>
+  </div>
+</div>
+      <div class="btn btn-primary">
+        <%= link_to 'Declare a found pet', new_pet_path, class: "link_to" %>
+      </div>
+    </div>

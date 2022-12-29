@@ -1,0 +1,20 @@
+<%#= form_for(pet, html: { class: 'd-flex flex-column'}) do |f| %>
+  <%#= f.object.errors.full_messages.join(', ') %>
+  <%#= f.label :name %>
+  <%#= f.text_field :name %>
+  <%#= f.label :address %>
+  <%#= f.text_field :address %>
+  <%#= f.label :species %>
+  <%#= f.text_field :species %>
+  <%#= f.label :found_on %>
+  <%#= f.date_field :found_on %>
+  <%#= f.submit class: 'btn btn-primary mt-3' %>
+<%# end %>
+
+<%= simple_form_for(@pet, html: { class: 'd-flex flex-column'}) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :species, collection: Pet::SPECIES %>
+  <%= f.input :found_on, html5: true %>
+  <%= f.button :submit, class: 'btn btn-primary' %>
+<% end %>
