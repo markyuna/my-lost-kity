@@ -52,11 +52,11 @@ h1 {
 
 .container {
   display: grid;
-
   grid-gap: 4px;
   padding: 2px;
-
+  height: 200px;
 }
+
 .col-1 {
   display: grid;
   height: 250px;
@@ -104,4 +104,36 @@ h1 {
 .list-group-item {
   scroll-padding-bottom: 10px;
   opacity: 80%;
+}
+
+.card-product {
+  display: flex;
+  border-radius: 12px;
+  padding: 15px;
+  height: auto;
+  background: #8dc63f;
+  align-items: center;
+  position: relative;
+  transition: .2;
+  box-shadow: 0 0 16px rgba(0,0,0,0.2);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.card-action {
+  display: flex;
+  position: absolute;
+  color: cornsilk;
+ align-items: center;
+}
+
+.card-destroy {
+  display: inline;
+  top: center;
+  right: 12px;
+}
+
+.card-edit {
+  display: inline;
+  bottom: center;
+  right: 100px;
 }

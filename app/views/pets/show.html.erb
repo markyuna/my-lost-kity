@@ -6,10 +6,10 @@
       <p>at <%= @pet.address %></p>
       <p>which is a <%= @pet.species %></p>
     </div>
-    <div class="row">
-      <%= link_to "Back to animals", pets_path %>
-      <%= link_to "Edit", edit_pet_path(@pet) %>
-      <%= link_to "Delete", pet_path(@pet), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>
+    <div class="card-product">
+    <div class="card-action">  <i class="fa fa-arrow-circle-o-left" ></i>  <%= link_to "Back to animals", pets_path %></div>
+    <div class="card-action card-edit">  <i class="fas fa-edit"></i>  <%= link_to "Edit", edit_pet_path(@pet) %></div>
+    <div class="card-action card-destroy">  <i class="fas fa-trash-alt"> </i> <%= link_to "Delete", pet_path(@pet), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %></div>
 
     </div>
   </div>
